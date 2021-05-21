@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>CMS.Core</id>
+		<version>0.0.0.0</version>
+		<title>Cache</title>
+		<authors>HVG Online ZRt.</authors>
+		<owners>HVG Online ZRt.</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>CMS core features</description>
+		<releaseNotes />
+		<copyright>Copyright 2015</copyright>
+		<tags>CMS</tags>
+		<dependencies>
+			<dependency id="AutoMapper"
+						version="3.1.0"	/>
+			<dependency id="Castle.Core"
+						version="3.2.2"	/>
+			<dependency id="Castle.LoggingFacility"
+						version="3.2.0"	/>
+			<dependency id="Castle.Windsor"
+						version="3.2.1"	/>
+			<dependency id="Castle.Windsor.Lifestyles"
+						version="0.3.0"	/>
+			<dependency id="Common.Logging"
+						version="2.1.2"	/>
+			<dependency id="CouchbaseNetClient"
+						version="1.3.5"	/>
+			<dependency id="EntityFramework"
+						version="6.0.2"	/>
+			<dependency id="ERA.Client"
+						version="2.5.3801.285"	/>
+			<dependency id="Google.GData.Client"
+						version="2.2.0.0"	/>
+			<dependency id="Google.GData.Extensions"
+						version="2.2.0.0"	/>
+			<dependency id="Google.GData.YouTube"
+						version="2.2.0.0"	/>
+			<dependency id="GravatarHelper"
+						version="3.2.3"	/>
+			<dependency id="HtmlAgilityPack"
+						version="1.4.6"	/>
+			<dependency id="ImageResizer"
+						version="3.2.4"	/>
+			<dependency id="log4net"
+						version="1.2.10"	/>
+			<dependency id="Microsoft.AspNet.Mvc"
+						version="5.1.2"	/>
+			<dependency id="Microsoft.AspNet.Mvc.Futures"
+						version="5.0.0"	/>
+			<dependency id="Microsoft.AspNet.Razor"
+						version="3.1.2"	/>
+			<dependency id="Microsoft.AspNet.WebApi"
+						version="5.2.0"	/>
+			<dependency id="Microsoft.AspNet.WebApi.Client"
+						version="5.2.0"	/>
+			<dependency id="Microsoft.AspNet.WebApi.Core"
+						version="5.2.0"	/>
+			<dependency id="Microsoft.AspNet.WebApi.WebHost"
+						version="5.2.0"	/>
+			<dependency id="Microsoft.AspNet.WebPages"
+						version="3.1.2"	/>
+			<dependency id="Microsoft.Bcl"
+						version="1.1.6"	/>
+			<dependency id="Microsoft.Bcl.Build"
+						version="1.0.10"	/>
+			<dependency id="Microsoft.Diagnostics.Tracing.EventRegister"
+						version="1.0.16"	/>
+			<dependency id="Microsoft.Diagnostics.Tracing.EventSource"
+						version="1.0.16"	/>
+			<dependency id="Microsoft.Net.Http"
+						version="2.2.15"	/>
+			<dependency id="Microsoft.Web.Administration"
+						version="7.0.0.0"	/>
+			<dependency id="Microsoft.Web.Infrastructure"
+						version="1.0.0.0"	/>
+			<dependency id="ncalc"
+						version="1.3.8"	/>
+			<dependency id="NEST"
+						version="0.11.4.1"	/>
+			<dependency id="Newtonsoft.Json"
+						version="5.0.8"	/>
+			<dependency id="Nustache"
+						version="1.13.8.22"	/>
+			<dependency id="SlowCheetah"
+						version="2.5.10.6"	/>
+		</dependencies>
+	</metadata>
+	<files>
+		<!-- tools -->
+		<file src="..\CMS.Core\bin\install.ps1" target="tools" />
+		<!-- Bin -->
+		<file src="..\CMS.Core\bin\*.dll" target="lib\net45" />
+		<file src="..\CMS.Core\bin\*.pdb" target="lib\net45" />
+		<!-- Content -->
+		<file src="..\CMS.Core\bin\AdvertisementModule\*.*" target="content\AdvertisementModule" />
+		<file src="..\CMS.Core\bin\Views\*.*" target="content\CMSViews" />
+	</files>
+</package>

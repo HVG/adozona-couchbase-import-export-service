@@ -1,0 +1,5 @@
+﻿@model CMS.Core.AdvertisementModule.Controls.AdverticumAwareCustomAdvertisementControl
+
+@using System.Text
+
+<div data-customhtml="@Convert.ToBase64String(Encoding.UTF8.GetBytes(Model.CustomHtml))" data-zoneids="@Model.ZoneIds"></div>

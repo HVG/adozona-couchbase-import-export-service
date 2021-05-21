@@ -1,0 +1,8 @@
+﻿@model CMS.Core.AdvertisementModule.Controls.SponsorStripControl
+
+<a href="@Model.ClickUrl" class="ad-stripe" style="color: @Model.TextColor; background: @Model.BackgroundColor url(@Model.LogoUrl) right top no-repeat;" target="_blank" rel="nofollow">A rovat támogatója: @Model.SponsorName</a>
+
+@if (!string.IsNullOrEmpty(Model.ZoneId))
+{
+    <div id="zone@(Model.ZoneId)" class="goAdverticum"></div>
+}
